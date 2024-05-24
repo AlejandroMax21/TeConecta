@@ -1,0 +1,149 @@
+/* Importando Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #005f73;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__logo img {
+    height: 60px;
+}
+
+.main {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.forum-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.thread {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.thread h3 {
+    margin-top: 0;
+    color: #005f73;
+}
+
+.thread p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.thread a {
+    color: #005f73;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.thread a:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #014f5a;
+}
+
+.submit-btn {
+    background-color: #005f73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #014f5a;
+}
+
+.cancel-btn {
+    background-color: #888;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cancel-btn:hover {
+    background-color: #555;
+}
+
+.footer__container {
+    background-color: #005f73;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 20px;
+    }
+
+    .navbar__logo img {
+        height: 50px;
+    }
+
+    .forum-container {
+        padding: 20px;
+    }
+
+    .thread {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    .submit-btn, .cancel-btn {
+        padding: 8px 16px;
+    }
+}
